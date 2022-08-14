@@ -11,7 +11,7 @@ html {
 body {
     width: 100%;
     font-family: var(--font1);
-    font-size: 16px;
+    font-size: 17px;
     color: var(--gr2);
     overflow-x: hidden;
 }
