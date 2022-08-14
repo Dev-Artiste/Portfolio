@@ -1,0 +1,27 @@
+:root {
+    /* FONTS */
+    --font1: sans-serif;
+
+    /* COLORS */
+    /* Theme */
+    --th1: #5c4813;
+    --th2: #8c6d1f;
+    --th3: #caa53d;
+    --th4: #f4ca64;
+    --th5: #fae29f;
+    --th6: #fdf3d7;
+    --th7: #fffcf4;
+
+    /* Grays */
+    --gr1: #222222;
+    --gr2: #2a2a2a;
+    --gr3: #3f3f3f;
+    --gr4: #565656;
+    --gr5: #939393;
+    --gr6: #bebebe;
+    --gr7: #dadada;
+    --gr8: #e6e6e6;
+    --gr9: #eeeeee;
+    --gr10: #f7f7f7;
+    --gr11: #fcfcfc;
+}

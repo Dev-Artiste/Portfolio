@@ -1,0 +1,57 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: var(--font1);
+    font-size: 16px;
+    color: var(--gr2);
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--gr3);
+    color: #fff;
+    text-shadow: none;
+}
+
+a,
+a::before,
+a::after,
+button,
+button::before,
+button::after {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.08s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    list-style: none;
+    list-style-type: none;
+}

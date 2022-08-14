@@ -1,0 +1,28 @@
+/* ANTHONYKIIRU.COM CSS */
+
+/* Icons */
+/* @font-face {
+    font-family: "zb-icons";
+    src: url("../public/icons/zb-icons.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+} */
+
+/* Helpers */
+@import "/css/variables.css";
+
+/* Base */
+@import "/css/base.css";
+@import "/css/typography.css";
+@import "/css/responsive.css";
+
+/* Layout */
+@import "/css/header.css";
+@import "/css/footer.css";
+
+/* Components */
+@import "/css/input.css";
+
+/* Pages */
+@import "/css/home.css";
