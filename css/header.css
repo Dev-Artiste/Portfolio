@@ -1,7 +1,139 @@
-.home-header {
-    padding: 15px 40px;
+.desktop-header {
+    height: 110px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gr8);
 }
 
-.home-header .logo {
-    width: 40px;
+.desktop-header .brand {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-header .brand img {
+    width: 45px;
+}
+
+.desktop-header .brand .info {
+    margin-left: 10px;
+    padding: 5px 0 5px 10px;
+    border-left: 1px solid var(--gr8);
+}
+
+.desktop-header .brand .name,
+.desktop-header .brand .portfolio {
+    display: block;
+    font-family: var(--fQ);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.desktop-header .brand .name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.desktop-header .brand .portfolio {
+    font-size: 13px;
+}
+
+.desktop-header .right {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu,
+.main-menu ul,
+.main-menu li,
+.main-menu a {
+    height: inherit;
+}
+
+.main-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-menu a {
+    display: block;
+    line-height: 110px;
+    padding: 0 3px;
+    font-family: var(--fM500);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.main-menu a::after {
+    content: '';
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gr2);
+}
+
+.main-menu a:not(.active)::after {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-out;
+    background-color: var(--th3);
+}
+
+.main-menu a:not(.active):hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.desktop-header .sep {
+    display: block;
+    height: 110px;
+    width: 1px;
+    background-color: var(--gr8);
+    margin-left: 44px;
+    margin-right: 15px;
+}
+
+.desktop-header .social ul {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-header .social a {
+    display: block;
+    color: var(--gr3);
+    height: 45px;
+    width: 45px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    position: relative;
+}
+
+.desktop-header .social a:hover {
+    border-color: var(--gr9);
+}
+
+.desktop-header .social a::before {
+    display: block;
+    font-family: 'ak-icons';
+    font-size: 17px;
+    color: var(--gr3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desktop-header .social a.facebook::before {
+    content: "\ea90";
+}
+
+.desktop-header .social a.instagram::before {
+    content: "\ea92";
 }

@@ -4,13 +4,9 @@ body {
     margin: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     width: 100%;
-    font-family: var(--font1);
+    font-family: var(--fR300);
     font-size: 17px;
     color: var(--gr2);
     overflow-x: hidden;

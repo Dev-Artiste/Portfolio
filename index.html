@@ -10,27 +10,101 @@
     <link rel="icon" href="/assets/favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/main.js"></script>
     <title>Portfolio | Anthony Kiiru</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="home-header">
-        <div class="logo">
+    <header class="desktop-header">
+        <a href="/" class="brand">
             <img src="/assets/logo.png" alt="Anthony Kiiru logo">
-        </div>
+            <div class="info">
+                <span class="name">Anthony Kiiru</span>
+                <span class="portfolio">Portfolio</span>
+            </div>
+        </a>
+        <nav class="right">
+            <div class="main-menu">
+                <ul>
+                    <li><a id="portfolio-link" class="active">Portfolio</a></li>
+                    <li><a href="about-me.html">About me</a></li>
+                    <li><a href="contact-me.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sep"></div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- MAIN -->
     <main>
+        <!-- Slideshow -->
+        <section class="slideshow">
+            <ul id="slides">
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-left.jpg" /></div>
+                    <div class="slide-partial slide-right"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-right.jpg" /></div>
+                    <h1 class="title"><span class="title-text">Elegant</span></h1>
+                </li>
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-left.jpg" /></div>
+                    <div class="slide-partial slide-right"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-right.jpg" /></div>
+                    <h1 class="title"><span class="title-text">Decisive</span></h1>
+                </li>
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-left.jpg" /></div>
+                    <div class="slide-partial slide-right"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-right.jpg" /></div>
+                    <h1 class="title"><span class="title-text">Ultra-modern</span></h1>
+                </li>
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-left.jpg" /></div>
+                    <div class="slide-partial slide-right"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-right.jpg" /></div>
+                    <h1 class="title"><span class="title-text">Creative</span></h1>
+                </li>
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-left.jpg" /></div>
+                    <div class="slide-partial slide-right"><img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-right.jpg" /></div>
+                    <h1 class="title"><span class="title-text">Stylish</span></h1>
+                </li>
+            </ul>
+            <ul id="slide-select">
+                <li class="selector"></li>
+                <li class="selector"></li>
+                <li class="selector"></li>
+                <li class="selector"></li>
+                <li class="selector"></li>
+            </ul>
+        </section>
 
+        <!-- Portfolio -->
+        <section id="portfolio">
+
+        </section>
+        <div class="spacer"></div>
     </main>
 
     <!-- FOOTER -->
     <footer>
 
     </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,14 @@
 :root {
     /* FONTS */
-    --font1: sans-serif;
+    --fQ: "Questrial 400";
+
+    --fR300: "Roboto 300";
+    --fR300i: "Roboto 300 Italic";
+    --fR400: "Roboto 400";
+    --fR400i: "Roboto 400 Italic";
+
+    --fM500: "Montserrat 500";
+    --fM500i: "Montserrat 500 Italic";
 
     /* COLORS */
     /* Theme */
@@ -20,8 +28,9 @@
     --gr5: #939393;
     --gr6: #bebebe;
     --gr7: #dadada;
-    --gr8: #e6e6e6;
-    --gr9: #eeeeee;
-    --gr10: #f7f7f7;
-    --gr11: #fcfcfc;
+    --gr8: #e1e1e1;
+    --gr9: #e6e6e6;
+    --gr10: #eeeeee;
+    --gr11: #f7f7f7;
+    --gr12: #fcfcfc;
 }
