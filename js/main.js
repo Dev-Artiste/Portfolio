@@ -57,6 +57,17 @@ $(() => {
             interval = window.setInterval(cycle, 6000);
         }
     });
+
+    $btns.on("click", e => {
+        window.clearInterval(interval);
+        if ($(e.target).hasClass("prev")) {
+            let target = currentIndex > 0 ? currentIndex - 1 : $slides.length - 1;
+            cycle(target);
+        } else if ($(e.target).hasClass("next")) {
+            cycle();
+        }
+        interval = window.setInterval(cycle, 6000);
+    });
 });
 
 

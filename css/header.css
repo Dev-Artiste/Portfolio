@@ -1,10 +1,15 @@
 .desktop-header {
     height: 110px;
     padding: 0 40px;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--gr8);
+}
+
+.home-header {
+    border-bottom: 0;
 }
 
 .desktop-header .brand {
@@ -69,10 +74,14 @@
     position: relative;
 }
 
+.main-menu a:hover::after {
+    background-color: var(--th3);
+}
+
 .main-menu a::after {
     content: '';
     position: absolute;
-    top: 69px;
+    top: 64px;
     left: 0;
     width: 100%;
     height: 1px;

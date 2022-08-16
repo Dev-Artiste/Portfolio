@@ -12,6 +12,7 @@
 
 /* Components */
 @import "/css/input.css";
+@import "/css/general.css";
 
 /* Pages */
 @import "/css/home.css";
