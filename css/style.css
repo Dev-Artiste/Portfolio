@@ -11,12 +11,12 @@
 @import "/css/header.css";
 @import "/css/footer.css";
 
-/* Components */
-@import "/css/input.css";
+/* General */
 @import "/css/general.css";
 
 /* Pages */
 @import "/css/home.css";
+@import "/css/contact.css";
 
 /* ICONS */
 @font-face {

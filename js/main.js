@@ -137,3 +137,6 @@ $(() => {
         }
     });
 })(jQuery, window, document);
+
+/* Autofocus on name field Contact page */
+$("#nameField").focus();

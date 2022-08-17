@@ -1,0 +1,77 @@
+.contact-main {
+    background-color: var(--gr11);
+}
+
+.contact-cont {
+    width: 100%;
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-cont .left {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.contact-cont h1 {
+    font-family: var(--fQ);
+    font-size: 43px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.contact-cont .email,
+.contact-cont .phone,
+.contact-cont .address {
+    display: block;
+    margin: 16px 0;
+    font-style: normal;
+}
+
+.contact-cont .email:hover,
+.contact-cont .phone:hover {
+    color: var(--th2);
+}
+
+.contact-cont .contacts .icon {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.contact-cont .contacts .icon::before {
+    display: inline-block;
+    font-family: 'ak-icons';
+    content: "\ea90";
+    font-style: normal;
+    font-size: 15px;
+}
+
+.contact-cont .social {
+    margin-top: 30px;
+}
+
+.contact-cont .social li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.contact-cont .right {
+    flex-grow: 1;
+    max-width: 700px;
+    padding-left: 80px;
+    border-left: 1px solid var(--gr9);
+}
+
+.contact-cont .right h3 {
+    font-family: var(--fQ);
+    font-size: 27px;
+}
+
+.contact-cont .right .title-parag {
+    margin-bottom: 30px;
+}

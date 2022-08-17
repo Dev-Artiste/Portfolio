@@ -1,3 +1,62 @@
+/* INPUTS */
+.btn-a {
+    display: inline-block;
+    padding: 13px 28px;
+    outline: none;
+    border: 1px solid var(--gr2);
+    border-radius: 0;
+    background: none;
+    font-family: var(--fM500);
+    font-style: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--gr2);
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-a:hover {
+    border-color: var(--gr2);
+    background: var(--gr2);
+    color: #fff;
+}
+
+input[type=hidden] {
+    display: none;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--gr6);
+    border-radius: 1px;
+    background: #fff;
+    padding: 11px 12px;
+    font-family: var(--fR400);
+    font-size: 16px;
+    color: var(--gr2);
+    margin-bottom: 17px;
+    outline: none;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 190px;
+}
+
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=email]:hover,
+input[type=email]:focus,
+textarea:hover,
+textarea:focus {
+    border-color: var(--gr3);
+    outline: none;
+}
+
 .arrow {
     cursor: pointer;
     height: 120px;

@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    background: var(--gr3);
+    background: var(--gr1);
     color: #fff;
     text-shadow: none;
 }

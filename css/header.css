@@ -129,20 +129,23 @@
 }
 
 .desktop-header .social a::before {
-    display: block;
-    font-family: 'ak-icons';
-    font-size: 17px;
-    color: var(--gr3);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.desktop-header .social a.facebook::before {
+.social a::before {
+    display: block;
+    font-family: 'ak-icons';
+    font-size: 17px;
+    color: var(--gr3);
+}
+
+.social a.facebook::before {
     content: "\ea90";
 }
 
-.desktop-header .social a.instagram::before {
+.social a.instagram::before {
     content: "\ea92";
 }
