@@ -1,14 +1,14 @@
 :root {
     /* FONTS */
-    --fQ: "Questrial 400";
+    --fQ: "Questrial 400", sans-serif;
 
-    --fR300: "Roboto 300";
-    --fR300i: "Roboto 300 Italic";
-    --fR400: "Roboto 400";
-    --fR400i: "Roboto 400 Italic";
+    --fR300: "Roboto 300", sans-serif;
+    --fR300i: "Roboto 300 Italic", sans-serif;
+    --fR400: "Roboto 400", sans-serif;
+    --fR400i: "Roboto 400 Italic", sans-serif;
 
-    --fM500: "Montserrat 500";
-    --fM500i: "Montserrat 500 Italic";
+    --fM500: "Montserrat 500", sans-serif;
+    --fM500i: "Montserrat 500 Italic", sans-serif;
 
     /* COLORS */
     /* Theme */
