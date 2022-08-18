@@ -12,13 +12,6 @@ $(function () {
     $(".site-footer").load("footer.html");
 });
 
-/* Link to #Portfolio section */
-$("#portfolio-link").click(function () {
-    $('html,body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 'slow');
-});
-
 /* Home Slideshow */
 // https://codepen.io/seanfree/pen/LxPBZy
 let $slides, interval, $selectors, $btns, currentIndex, nextIndex;

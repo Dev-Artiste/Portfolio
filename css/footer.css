@@ -4,34 +4,68 @@
     padding-top: 80px;
 }
 
+.footer-width {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer-flex {
     display: flex;
     justify-content: space-between;
 }
 
 .footer-flex .left {
-    width: 50%;
+    max-width: 400px;
+    flex-shrink: 0;
     padding-right: 80px;
+    border-right: 1px solid var(--gr8);
 }
 
-.site-footer .logo {
-    width: 50px;
-} 
-
 .site-footer .statement {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer-flex .right {
-    width: 50%;
-}
-
-.footer-menu ul {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 80px;
     display: flex;
+    justify-content: space-between;
 }
 
-.footer-menu ul li {
-    margin-right: 15px;
+.footer-menu {
+    margin-bottom: 26px;
+}
+
+.footer-menu li:first-child a {
+    padding-top: 0;
+}
+
+.footer-menu li a {
+    display: block;
+    padding: 4px 0;
+    margin-bottom: 10px;
+    font-family: var(--fM500);
+    font-size: 14px;
+    color: var(--gr3);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.page-home .footer-portfolio-link,
+.page-about-me .footer-about-me-link,
+.page-contact .footer-contact-me-link {
+    text-decoration: underline;
+}
+
+.footer-menu li a:hover {
+    text-decoration: underline;
+}
+
+.footer-flex .right .social-cont h5 {
+    font-size: 16px;
+    margin: 0 0 10px;
 }
 
 .copyright  {
@@ -41,7 +75,13 @@
     margin: 0;
 }
 
+.copyright .name {
+    font-family: var(--fR400);
+}
 
+.copyright .name:hover {
+    text-decoration: underline;
+}
 
 
 

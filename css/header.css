@@ -8,8 +8,14 @@
     border-bottom: 1px solid var(--gr8);
 }
 
-.home-header {
+.page-home {
     border-bottom: 0;
+}
+
+.page-home .portfolio-link::after,
+.page-about-me .about-me-link::after,
+.page-contact .contact-me-link::after {
+    transform: none;
 }
 
 .brand {
@@ -75,28 +81,21 @@
 
 .main-menu a:hover::after {
     background-color: var(--th3);
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .main-menu a::after {
     content: '';
     position: absolute;
-    top: 64px;
+    top: 63px;
     left: 0;
     width: 100%;
     height: 1px;
     background-color: var(--gr2);
-}
-
-.main-menu a:not(.active)::after {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .2s ease-out;
-    background-color: var(--th3);
-}
-
-.main-menu a:not(.active):hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
 }
 
 .desktop-header .sep {
