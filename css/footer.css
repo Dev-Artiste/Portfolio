@@ -4,12 +4,6 @@
     padding-top: 80px;
 }
 
-.footer-width {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer-flex {
     display: flex;
     justify-content: space-between;
@@ -18,7 +12,7 @@
 .footer-flex .left {
     max-width: 400px;
     flex-shrink: 0;
-    padding-right: 80px;
+    padding-right: 40px;
     border-right: 1px solid var(--gr8);
 }
 
@@ -27,11 +21,14 @@
 }
 
 .footer-flex .right {
-    max-width: 600px;
     width: 100%;
-    padding-left: 80px;
+    padding-left: 70px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-flex .right .email {
+    margin-top: 0;
 }
 
 .footer-menu {
@@ -47,7 +44,7 @@
     padding: 4px 0;
     margin-bottom: 10px;
     font-family: var(--fM500);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--gr3);
     letter-spacing: 0.8px;
     text-transform: uppercase;

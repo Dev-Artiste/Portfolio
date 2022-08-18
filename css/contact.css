@@ -1,20 +1,31 @@
 .contact-main {
-    background-color: var(--gr11);
+    position: relative;
+}
+
+.contact-main::before {
+    content: '';
+    background-image: url(/assets/bg3.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .contact-cont {
-    width: 100%;
-    max-width: 1176px;
-    margin: 0 auto;
-    padding: 100px 0;
+    padding: 90px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .contact-cont .left {
-    width: 280px;
     flex-shrink: 0;
+    padding: 60px;
+    border: 1px solid var(--gr9);
 }
 
 .contact-cont h1 {
@@ -22,55 +33,55 @@
     font-size: 43px;
     text-transform: capitalize;
     white-space: nowrap;
-    margin-top: 0;
+    margin: 0 0 22px;
 }
 
-.contact-cont .email,
-.contact-cont .phone,
-.contact-cont .whatsapp,
-.contact-cont .address {
+.contacts .email,
+.contacts .phone,
+.contacts .whatsapp,
+.contacts .address {
     display: block;
     margin: 17px 0;
     font-style: normal;
     letter-spacing: 0.1px;
 }
 
-.contact-cont .email:hover,
-.contact-cont .phone:hover,
-.contact-cont .whatsapp:hover {
+.contacts .email:hover,
+.contacts .phone:hover,
+.contacts .whatsapp:hover {
     color: var(--th2);
 }
 
-.contact-cont .contacts .icon {
+.contacts .icon {
     display: inline-block;
     margin-right: 7px;
 }
 
-.contact-cont .contacts .icon::before {
+.contacts .icon::before {
     display: inline-block;
     font-family: 'ak-icons';
     font-style: normal;
     font-size: 15px;
 }
 
-.contact-cont .contacts .email .icon::before {
+.contacts .email .icon::before {
     content: "\e902";
     font-size: 17px;
     vertical-align: middle;
     padding-bottom: 1px;
 }
 
-.contact-cont .contacts .phone .icon::before {
+.contacts .phone .icon::before {
     content: "\e901";
     color: var(--gr3);
 }
 
-.contact-cont .contacts .whatsapp .icon::before {
+.contacts .whatsapp .icon::before {
     content: "\ea93";
     font-size: 15px;
 }
 
-.contact-cont .contacts .address .icon::before {
+.contacts .address .icon::before {
     content: "\e903";
     font-size: 16px;
 }
@@ -81,12 +92,10 @@
 
 .contact-cont .right {
     flex-grow: 1;
-    max-width: 700px;
-    padding-left: 80px;
-    border-left: 1px solid var(--gr9);
+    max-width: 640px;
 }
 
-.contact-cont .right h3 {
+.contact-cont .right h2 {
     font-family: var(--fQ);
     font-size: 27px;
     margin-top: 0;

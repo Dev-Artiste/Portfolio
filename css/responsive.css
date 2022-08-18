@@ -1,9 +1,16 @@
-.width-col {
+.width-900 {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.width-1176 {
+    max-width: 1176px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 
 

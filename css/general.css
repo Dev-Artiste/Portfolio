@@ -45,7 +45,6 @@ textarea {
     display: block;
     width: 100%;
     border: 1px solid var(--gr6);
-    border-radius: 1px;
     background: #fff;
     padding: 11px 12px;
     font-family: var(--fR400);
