@@ -6,6 +6,12 @@ $(window).on('load', function () {
     }, 1000);
 });
 
+/* Include page templates */
+$(function () {
+    $(".desktop-header").load("header.html");
+    $(".site-footer").load("footer.html");
+});
+
 /* Link to #Portfolio section */
 $("#portfolio-link").click(function () {
     $('html,body').animate({

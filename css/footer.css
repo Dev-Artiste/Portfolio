@@ -1,0 +1,59 @@
+.site-footer {
+    border-top: 1px solid var(--gr8);
+    background-color: var(--gr11);
+    padding-top: 80px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex .left {
+    width: 50%;
+    padding-right: 80px;
+}
+
+.site-footer .logo {
+    width: 50px;
+} 
+
+.site-footer .statement {
+    font-size: 14px;
+}
+
+.footer-flex .right {
+    width: 50%;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu ul li {
+    margin-right: 15px;
+}
+
+.copyright  {
+    text-align: center;
+    font-size: 14px;
+    padding: 30px 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

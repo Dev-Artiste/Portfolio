@@ -12,36 +12,36 @@
     border-bottom: 0;
 }
 
-.desktop-header .brand {
+.brand {
     display: flex;
     align-items: center;
 }
 
-.desktop-header .brand img {
+.brand img {
     width: 45px;
 }
 
-.desktop-header .brand .info {
+.brand .info {
     margin-left: 10px;
     padding: 5px 0 5px 10px;
     border-left: 1px solid var(--gr8);
 }
 
-.desktop-header .brand .name,
-.desktop-header .brand .portfolio {
+.brand .name,
+.brand .portfolio {
     display: block;
     font-family: var(--fQ);
     text-transform: uppercase;
     letter-spacing: 0.6px;
 }
 
-.desktop-header .brand .name {
+.brand .name {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 2px;
 }
 
-.desktop-header .brand .portfolio {
+.brand .portfolio {
     font-size: 13px;
 }
 
@@ -51,13 +51,12 @@
 }
 
 .main-menu,
-.main-menu ul,
 .main-menu li,
 .main-menu a {
     height: inherit;
 }
 
-.main-menu ul {
+.main-menu {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -109,43 +108,14 @@
     margin-right: 15px;
 }
 
-.desktop-header .social ul {
-    display: flex;
-    align-items: center;
+.desktop-header .social li {
+    margin-right: 0;
 }
 
 .desktop-header .social a {
-    display: block;
-    color: var(--gr3);
-    height: 45px;
-    width: 45px;
     border: 1px solid transparent;
-    border-radius: 2px;
-    position: relative;
 }
 
 .desktop-header .social a:hover {
     border-color: var(--gr9);
-}
-
-.desktop-header .social a::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.social a::before {
-    display: block;
-    font-family: 'ak-icons';
-    font-size: 17px;
-    color: var(--gr3);
-}
-
-.social a.facebook::before {
-    content: "\ea90";
-}
-
-.social a.instagram::before {
-    content: "\ea92";
 }

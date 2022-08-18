@@ -1,24 +1,38 @@
 /* INPUTS */
-.btn-a {
+.btn-a,
+.btn-b {
     display: inline-block;
     padding: 13px 28px;
     outline: none;
     border: 1px solid var(--gr2);
     border-radius: 0;
-    background: none;
     font-family: var(--fM500);
-    font-style: 14px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: var(--gr2);
     transition: .1s ease-in-out;
     cursor: pointer;
+}
+
+.btn-a {
+    background: none;
+    color: var(--gr2);
 }
 
 .btn-a:hover {
     border-color: var(--gr2);
     background: var(--gr2);
     color: #fff;
+}
+
+.btn-b {
+    background: var(--gr2);
+    color: #fff;
+}
+
+.btn-b:hover {
+    background: #fff;
+    color: var(--gr2);
 }
 
 input[type=hidden] {
@@ -44,7 +58,7 @@ textarea {
 textarea {
     max-width: 100%;
     min-width: 100%;
-    min-height: 190px;
+    min-height: 220px;
 }
 
 input[type=text]:hover,
@@ -122,4 +136,50 @@ textarea:focus {
 
 .arrow:active {
     transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+/* Social */
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social li {
+    margin-right: 10px;
+}
+
+.social a {
+    display: block;
+    color: var(--gr3);
+    height: 45px;
+    width: 45px;
+    border: 1px solid var(--gr9);
+    border-radius: 2px;
+    position: relative;
+}
+
+.social a:hover {
+    border-color: var(--gr4);
+}
+
+.social a::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social a::before {
+    display: block;
+    font-family: 'ak-icons';
+    font-size: 17px;
+    color: var(--gr3);
+}
+
+.social a.facebook::before {
+    content: "\ea90";
+}
+
+.social a.instagram::before {
+    content: "\ea92";
 }

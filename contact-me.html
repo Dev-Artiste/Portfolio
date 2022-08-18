@@ -25,31 +25,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="desktop-header">
-        <a href="/" class="brand">
-            <img src="/assets/logo.png" alt="Anthony Kiiru logo">
-            <div class="info">
-                <span class="name">Anthony Kiiru</span>
-                <span class="portfolio">Portfolio</span>
-            </div>
-        </a>
-        <nav class="right">
-            <div class="main-menu">
-                <ul>
-                    <li><a href="/">Portfolio</a></li>
-                    <li><a href="about-me.html">About me</a></li>
-                    <li><a href="contact-me.html" class="active">Contact</a></li>
-                </ul>
-            </div>
-            <div class="sep"></div>
-            <div class="social">
-                <ul>
-                    <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a></li>
-                    <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header class="desktop-header"></header>
 
     <!-- MAIN -->
     <main class="contact-main">
@@ -60,16 +36,14 @@
                     <a href="mailto:contact@anthonykiiru.com" class="email"><i
                             class="icon"></i>contact@anthonykiiru.com</a>
                     <a href="tel:+254790250775" class="phone"><i class="icon"></i>+254790250775</a>
+                    <a href="https://wa.me/+254790250775" target="_blank" class="whatsapp"><i
+                            class="icon"></i>+254790250775</a>
                     <span class="address"><i class="icon"></i>Nairobi, Kenya</span>
                 </address>
-                <div class="social">
-                    <ul>
-                        <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="social">
+                    <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a></li>
+                </ul>
             </div>
 
             <div class="right">
@@ -81,6 +55,7 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="New email woooo!">
                     <input type="hidden" name="_next" value="https://anthonykiiru.com/thankyou.html">
+                    <input type="hidden" name="_template" value="table">
 
                     <input type="text" name="name" placeholder="Name" id="nameField" required>
                     <input type="email" name="email" placeholder="Email Address" required>
@@ -92,9 +67,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-
-    </footer>
+    <footer class="site-footer"></footer>
 
     <!-- Scripts -->
     <script src="/js/main.js"></script>

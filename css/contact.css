@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 1176px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,14 +27,17 @@
 
 .contact-cont .email,
 .contact-cont .phone,
+.contact-cont .whatsapp,
 .contact-cont .address {
     display: block;
-    margin: 16px 0;
+    margin: 17px 0;
     font-style: normal;
+    letter-spacing: 0.1px;
 }
 
 .contact-cont .email:hover,
-.contact-cont .phone:hover {
+.contact-cont .phone:hover,
+.contact-cont .whatsapp:hover {
     color: var(--th2);
 }
 
@@ -46,18 +49,34 @@
 .contact-cont .contacts .icon::before {
     display: inline-block;
     font-family: 'ak-icons';
-    content: "\ea90";
     font-style: normal;
     font-size: 15px;
 }
 
-.contact-cont .social {
-    margin-top: 30px;
+.contact-cont .contacts .email .icon::before {
+    content: "\e902";
+    font-size: 17px;
+    vertical-align: middle;
+    padding-bottom: 1px;
 }
 
-.contact-cont .social li {
-    display: inline-block;
-    margin-right: 8px;
+.contact-cont .contacts .phone .icon::before {
+    content: "\e901";
+    color: var(--gr3);
+}
+
+.contact-cont .contacts .whatsapp .icon::before {
+    content: "\ea93";
+    font-size: 15px;
+}
+
+.contact-cont .contacts .address .icon::before {
+    content: "\e903";
+    font-size: 16px;
+}
+
+.contact-cont .social {
+    margin-top: 30px;
 }
 
 .contact-cont .right {
@@ -70,8 +89,44 @@
 .contact-cont .right h3 {
     font-family: var(--fQ);
     font-size: 27px;
+    margin-top: 0;
 }
 
 .contact-cont .right .title-parag {
     margin-bottom: 30px;
+}
+
+/* THANK YOU PAGE */
+.thankyou-main {
+    padding: 80px 0;
+}
+
+.thankyou-main>.inner {
+    display: flex;
+    align-items: center;
+}
+
+.thankyou-img {
+    width: 460px;
+    margin-right: 80px;
+}
+
+.thankyou-main h1 {
+    font-family: var(--fQ);
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+.thankyou-main .btn-b {
+    margin-top: 20px;
+}
+
+.thankyou-main .social-cont {
+    margin-top: 10px;
+}
+
+.thankyou-main .social-cont h3 {
+    font-family: var(--fR300);
+    font-size: 17px;
+    margin-bottom: 10px;
 }

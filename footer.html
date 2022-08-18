@@ -1,0 +1,36 @@
+<div class="width-col">
+    <div class="footer-flex">
+        <div class="left">
+            <a href="/" class="brand">
+                <img src="/assets/logo.png" alt="Anthony Kiiru logo">
+                <div class="info">
+                    <span class="name">Anthony Kiiru</span>
+                    <span class="portfolio">Portfolio</span>
+                </div>
+            </a>
+            <p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati
+                vel
+                nostrum quisquam rerum, voluptates enim atque corporis eveniet laborum.</p>
+        </div>
+        <nav class="right">
+            <ul class="footer-menu">
+                <li><a id="portfolio-link" class="active">Portfolio</a></li>
+                <li><a href="about-me.html">About me</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a>
+                </li>
+                <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <p class="copyright">&copy; <span id="currentYear"></span> - Anthony Kiiru | All Rights Reserved.
+    </p>
+    <script>
+        const currentYear = (new Date).getFullYear();
+        document.getElementById("currentYear").innerHTML = currentYear;
+    </script>
+</div>
