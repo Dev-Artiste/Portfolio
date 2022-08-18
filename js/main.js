@@ -3,7 +3,7 @@ $(window).on('load', function () {
     setTimeout(function () {
         // Animate loader off screen
         $(".site-loader").fadeOut("slow");
-    }, 1000);
+    }, 0);
 });
 
 /* Include page templates */

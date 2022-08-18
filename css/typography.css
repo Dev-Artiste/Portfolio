@@ -13,5 +13,6 @@ a {
 
 P {
     line-height: 25px;
+    letter-spacing: 0.05px;
     color: var(--gr2);
 }
