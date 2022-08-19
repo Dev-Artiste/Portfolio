@@ -16,3 +16,42 @@ P {
     letter-spacing: 0.05px;
     color: var(--gr2);
 }
+
+.text-a {
+    font-family: var(--fM700);
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--gr9);
+}
+
+.text-b {
+    font-family: var(--fM500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    color: var(--gr3);
+}
+
+.title-block-a {
+    margin: 10px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-block-a .text-a {
+    margin: 8px 0 0;
+}
+
+.title-block-a .title-flex {
+    display: flex;
+}
+
+.title-block-a .title-flex img {
+    width: 38px;
+    margin-left: 20px;
+    opacity: .8;
+}
