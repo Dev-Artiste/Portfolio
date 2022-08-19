@@ -24,7 +24,7 @@
 
 .contact-cont .left {
     flex-shrink: 0;
-    padding: 60px;
+    padding: 43px 50px 50px;
     border: 1px solid var(--gr9);
 }
 

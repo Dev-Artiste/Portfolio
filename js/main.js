@@ -79,7 +79,6 @@ $(() => {
 
 /* Porfolio Menu */
 (function ($, window, document) {
-
     $('[data-toggle]').on('click', function (event) {
         event.preventDefault();
         var target = $(this.hash);
@@ -88,24 +87,21 @@ $(() => {
 
     // Cache selectors
     var lastId,
-        topMenu = $("#top-menu"),
-        topMenuHeight = topMenu.outerHeight() + 15,
+        pfNav = $(".portfolioNav"),
+        itemGap = 30,
         // All list items
-        menuItems = topMenu.find("a"),
+        pfItems = pfNav.find("a"),
         // Anchors corresponding to menu items
-        scrollItems = menuItems.map(function () {
+        scrollItems = pfItems.map(function () {
             var item = $(this).attr("href");
             if (item != '#') { return $(item) }
         });
 
-    console.log(scrollItems)
-
-
     // Bind click handler to menu items
     // so we can get a fancy scroll animation
-    menuItems.click(function (e) {
+    pfItems.click(function (e) {
         var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            offsetTop = href === "#" ? 0 : $(href).offset().top - itemGap + 1;
         $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 300);
@@ -115,7 +111,7 @@ $(() => {
     // Bind to scroll
     $(window).scroll(function () {
         // Get container scroll position
-        var fromTop = $(this).scrollTop() + topMenuHeight;
+        var fromTop = $(this).scrollTop() + itemGap;
 
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
@@ -130,12 +126,12 @@ $(() => {
         if (lastId !== id) {
             lastId = id;
             // Set/remove active class
-            menuItems
+            pfItems
                 .parent().removeClass("active-pf-item")
                 .end().filter("[href='#" + id + "']").parent().addClass("active-pf-item");
         }
     });
 })(jQuery, window, document);
 
-/* Autofocus on name field Contact page */
+/* Autofocus on name field - Contact page */
 $("#nameField").focus();
