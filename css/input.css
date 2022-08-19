@@ -6,7 +6,7 @@
     border: 1px solid var(--gr2);
     border-radius: 0;
     font-family: var(--fM500);
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     transition: .1s ease-in-out;
