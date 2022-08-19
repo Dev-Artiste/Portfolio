@@ -23,8 +23,9 @@ P {
     font-weight: 700;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--gr9);
+    color: white;
+    text-shadow: -1px -1px 0 var(--gr8), 1px -1px 0 var(--gr8),
+        -1px 1px 0 var(--gr8), 1px 1px 0 var(--gr8);
 }
 
 .text-b {
@@ -36,7 +37,7 @@ P {
 }
 
 .title-block-a {
-    margin: 10px 0 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;

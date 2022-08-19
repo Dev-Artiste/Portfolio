@@ -1,76 +1,98 @@
-/* INPUTS */
-.btn-a,
-.btn-b {
-    display: inline-block;
-    padding: 13px 28px;
-    outline: none;
-    border: 1px solid var(--gr2);
-    border-radius: 0;
-    font-family: var(--fM500);
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    transition: .1s ease-in-out;
-    cursor: pointer;
+/* extensions cont */
+.ext-cont {
+    position: relative;
 }
 
-.btn-a {
-    background: none;
-    color: var(--gr2);
+.exts {
+    position: absolute;
 }
 
-.btn-a:hover {
-    border-color: var(--gr2);
-    background: var(--gr2);
-    color: #fff;
-}
-
-.btn-b {
-    background: var(--gr2);
-    color: #fff;
-}
-
-.btn-b:hover {
-    background: #fff;
-    color: var(--gr2);
-}
-
-input[type=hidden] {
-    display: none;
-}
-
-input[type=text],
-input[type=email],
-textarea {
+.exts::before,
+.exts::after {
     display: block;
-    width: 100%;
-    border: 1px solid var(--gr6);
-    background: #fff;
-    padding: 11px 12px;
-    font-family: var(--fR400);
-    font-size: 16px;
-    color: var(--gr2);
-    margin-bottom: 17px;
-    outline: none;
+    content: '';
+    position: absolute;
+    background-color: var(--gr7);
+    z-index: -1;
 }
 
-textarea {
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 220px;
+.ext-cont .top-left {
+    top: 0;
+    left: 0;
 }
 
-input[type=text]:hover,
-input[type=text]:focus,
-input[type=email]:hover,
-input[type=email]:focus,
-textarea:hover,
-textarea:focus {
-    border-color: var(--gr3);
-    outline: none;
+.ext-cont .top-left::before {
+    top: -1px;
+    left: -11px;
+    height: 1px;
+    width: 11px;
 }
 
-.arrow {
+.ext-cont .top-left::after {
+    right: 0;
+    top: -11px;
+    height: 11px;
+    width: 1px;
+}
+
+.ext-cont .top-right {
+    top: 0;
+    right: 0;
+}
+
+.ext-cont .top-right::before {
+    right: -1px;
+    top: -11px;
+    height: 11px;
+    width: 1px;
+}
+
+.ext-cont .top-right::after {
+    top: -1px;
+    right: -11px;
+    height: 1px;
+    width: 11px;
+}
+
+.ext-cont .bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.ext-cont .bottom-left::before {
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 11px;
+}
+
+.ext-cont .bottom-left::after {
+    right: 0;
+    top: 0;
+    height: 11px;
+    width: 1px;
+}
+
+.ext-cont .bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.ext-cont .bottom-right::before {
+    top: 0;
+    right: -11px;
+    height: 1px;
+    width: 11px;
+}
+
+.ext-cont .bottom-right::after {
+    right: -1px;
+    top: 0;
+    height: 11px;
+    width: 1px;
+}
+
+/*.arrow {
     cursor: pointer;
     height: 120px;
     left: 50%;
@@ -135,7 +157,7 @@ textarea:focus {
 
 .arrow:active {
     transform: translateX(-50%) translateY(-50%) scale(0.9);
-}
+}*/
 
 /* Social */
 .social {

@@ -88,7 +88,7 @@ $(() => {
     // Cache selectors
     var lastId,
         pfNav = $(".portfolioNav"),
-        itemGap = 30,
+        itemGap = 0,
         // All list items
         pfItems = pfNav.find("a"),
         // Anchors corresponding to menu items

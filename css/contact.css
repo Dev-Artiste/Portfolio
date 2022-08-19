@@ -28,6 +28,11 @@
     border: 1px solid var(--gr9);
 }
 
+.contact-cont .exts::before,
+.contact-cont .exts::after {
+    background-color: var(--gr9);
+}
+
 .contact-cont h1 {
     font-family: var(--fQ);
     font-size: 43px;

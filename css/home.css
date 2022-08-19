@@ -220,8 +220,8 @@
     left: 0;
     border-right: 1px solid var(--gr7);
     height: 100vh;
-    width: 200px;
-    padding: 70px 0 40px;
+    width: 250px;
+    padding: 60px 0 40px;
     margin-right: 40px;
     flex-shrink: 0;
     display: flex;
@@ -276,7 +276,8 @@
 }
 
 .sidenav li a .txt {
-    left: 18px;
+    left: 10px;
+    right: 45px;
 }
 
 .pf-nav-arrow {
@@ -314,10 +315,6 @@
     display: flex;
     padding: 50px 0;
     border-bottom: 1px solid var(--gr10);
-}
-
-.pf-card:nth-child(1) {
-    padding-top: 0;
 }
 
 .pf-card .img-cont {
