@@ -1,9 +1,9 @@
 /* INPUTS */
 .btn {
     display: inline-block;
-    padding: 13px 28px;
+    padding: 16px 28px;
     outline: none;
-    border: 1px solid var(--gr2);
+    border: 1px solid var(--gr5);
     border-radius: 0;
     font-family: var(--fM500);
     font-size: 12px;
@@ -135,13 +135,12 @@ input[type=email],
 textarea {
     display: block;
     width: 100%;
-    border: 1px solid var(--gr6);
+    border: none;
     background: #fff;
-    padding: 11px 12px;
+    padding: 13px 12px;
     font-family: var(--fR400);
     font-size: 16px;
     color: var(--gr2);
-    margin-bottom: 17px;
     outline: none;
 }
 
@@ -157,6 +156,6 @@ input[type=email]:hover,
 input[type=email]:focus,
 textarea:hover,
 textarea:focus {
-    border-color: var(--gr3);
+    border: none;
     outline: none;
 }

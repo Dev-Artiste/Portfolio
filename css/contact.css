@@ -110,6 +110,15 @@
     margin-bottom: 30px;
 }
 
+.contact-cont .ext-cont {
+    border: 1px solid var(--gr6);
+    margin-bottom: 25px;
+}
+
+.contact-cont .ext-cont:focus-within {
+    border-color: var(--gr4);
+}
+
 /* THANK YOU PAGE */
 .thankyou-main {
     padding: 80px 0;

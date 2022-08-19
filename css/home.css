@@ -317,6 +317,10 @@
     border-bottom: 1px solid var(--gr10);
 }
 
+.pf-card:last-child {
+    border-bottom: none;
+}
+
 .pf-card .img-cont {
     display: block;
     width: 60%;
