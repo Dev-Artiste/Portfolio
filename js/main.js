@@ -8,8 +8,10 @@ $(window).on('load', function () {
 
 /* Include page templates */
 $(function () {
-    $(".desktop-header").load("header.html");
-    $(".site-footer").load("footer.html");
+    $(".root-dir-header").load("header.html");
+    $(".second-dir-header").load("../header.html");
+    $(".root-dir-footer").load("footer.html");
+    $(".second-dir-footer").load("../footer.html");
 });
 
 /* Home Slideshow */
