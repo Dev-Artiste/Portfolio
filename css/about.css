@@ -1,0 +1,27 @@
+.about-flex {
+    display: flex;
+    padding: 80px 0;
+}
+
+.about-flex .left {
+    padding-right: 80px;
+}
+
+.about-flex .left .title {
+    font-family: var(--fQ);
+    font-size: 55px;
+}
+
+.about-flex .left .bold {
+    font-family: var(--fR400);
+}
+
+.about-flex .left .social-cont h5 {
+    font-size: 17px;
+    margin: 20px 0 15px;
+}
+
+.about-flex .right {
+    width: 500px;
+    flex-shrink: 0;
+}
