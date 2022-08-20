@@ -131,14 +131,18 @@
 }
 
 .thankyou-img {
-    width: 460px;
-    margin-right: 80px;
+    width: 480px;
+    margin-right: 60px;
 }
 
 .thankyou-main h1 {
     font-family: var(--fQ);
     font-size: 27px;
     margin-bottom: 0;
+}
+
+.get-back-msg {
+    margin-top: 11px;
 }
 
 .thankyou-main .btn-b {
