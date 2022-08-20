@@ -10,6 +10,7 @@
 .about-flex .left .title {
     font-family: var(--fQ);
     font-size: 55px;
+    margin-bottom: 30px;
 }
 
 .about-flex .left .bold {
