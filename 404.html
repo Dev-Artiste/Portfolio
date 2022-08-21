@@ -25,7 +25,36 @@
 
 <body>
     <!-- HEADER -->
-    <header class="root-dir-header desktop-header"></header>
+    <header class="desktop-header">
+        <a href="/" class="brand">
+            <img src="/assets/logo.png" alt="Anthony Kiiru logo">
+            <div class="info">
+                <span class="name">Anthony Kiiru</span>
+                <span class="portfolio">Portfolio</span>
+            </div>
+        </a>
+        <nav class="right">
+            <ul class="main-menu">
+                <li><a href="/" class="portfolio-link">Portfolio</a></li>
+                <li><a href="about-me.html" class="about-me-link">About me</a></li>
+                <li><a href="contact-me.html" class="contact-me-link">Contact</a></li>
+            </ul>
+            <div class="sep"></div>
+            <ul class="social">
+                <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank" class="facebook"></a></li>
+                <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a></li>
+            </ul>
+        </nav>
+        <script>
+            /* Link to #Portfolio section */
+            $(".page-home .portfolio-link").click(function (ev) {
+                ev.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $("#portfolio").offset().top
+                }, 'slow');
+            });
+        </script>
+    </header>
 
     <!-- MAIN -->
     <main class="width-900 main-404">
@@ -37,7 +66,66 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="root-dir-footer site-footer"></footer>
+    <footer class="site-footer">
+        <div class="width-1176">
+            <div class="footer-flex">
+                <div class="left">
+                    <a href="/" class="brand">
+                        <img src="/assets/logo.png" alt="Anthony Kiiru logo">
+                        <div class="info">
+                            <span class="name">Anthony Kiiru</span>
+                            <span class="portfolio">Portfolio</span>
+                        </div>
+                    </a>
+                    <p class="statement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati
+                        vel
+                        nostrum quisquam rerum, voluptates enim atque corporis eveniet laborum.</p>
+                </div>
+                <nav class="right">
+                    <address class="contacts">
+                        <a href="mailto:contact@anthonykiiru.com" class="email"><i
+                                class="icon"></i>contact@anthonykiiru.com</a>
+                        <a href="tel:+254790250775" class="phone"><i class="icon"></i>+254790250775</a>
+                        <a href="https://wa.me/+254790250775" target="_blank" class="whatsapp"><i
+                                class="icon"></i>+254790250775</a>
+                        <span class="address"><i class="icon"></i>Nairobi, Kenya</span>
+                    </address>
+                    <ul class="footer-menu">
+                        <li><a href="/" class="footer-portfolio-link">Portfolio</a></li>
+                        <li><a href="about-me.html" class="footer-about-me-link">About me</a></li>
+                        <li><a href="contact-me.html" class="footer-contact-me-link">Contact</a></li>
+                    </ul>
+                    <div class="social-cont">
+                        <h5>Let's connect!</h5>
+                        <ul class="social">
+                            <li><a href="https://facebook.com/AnthonyKiiruCreative" target="_blank"
+                                    class="facebook"></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/anthony_kiiru" target="_blank" class="instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <script>
+                    /* Link to #Portfolio section */
+                    $(".page-home .footer-portfolio-link").click(function (ev) {
+                        ev.preventDefault();
+                        $('html,body').animate({
+                            scrollTop: $("#portfolio").offset().top
+                        }, 'slow');
+                    });
+                </script>
+            </div>
+
+            <p class="copyright">&copy; <span id="currentYear"></span> - <a href="/" class="name">Anthony Kiiru</a> |
+                All Rights
+                Reserved.</p>
+            <script>
+                const currentYear = new Date().getFullYear();
+                document.getElementById("currentYear").innerHTML = currentYear;
+            </script>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="/js/main.js"></script>
