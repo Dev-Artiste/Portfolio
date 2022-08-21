@@ -1,0 +1,142 @@
+.portfolio-page main {
+    padding-bottom: 60px;
+}
+
+/* intro section */
+.pf-intro-info {
+    margin: 80px 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf-intro-info .left {
+    max-width: 450px;
+    flex-shrink: 0;
+}
+
+.pf-intro-info h1 {
+    font-family: var(--fQ);
+    font-size: 55px;
+    margin-top: 0;
+}
+
+.pf-intro-info .right {
+    max-width: 620px;
+    flex-shrink: 0;
+}
+
+.pf-intro-info .right .text-c {
+    margin-top: 0;
+}
+
+.project-details {
+    margin-top: 40px;
+}
+
+.project-details .text-d {
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* presentation gallery */
+.pr-gallery {
+    margin-top: 100px;
+}
+
+.pr-gallery>.inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* floor plans */
+.section-plans {
+    margin-top: 60px;
+    padding-top: 68px;
+    border-top: 1px solid var(--gr10);
+}
+
+.section-plans>.inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.pf-card-2 {
+    margin-bottom: 20px;
+}
+
+.pf-card-2 .text-d {
+    margin: 24px 0 0;
+}
+
+.pf-card-2 p {
+    max-width: 600px;
+}
+
+/* elevations */
+.section-elevations {
+    margin-top: 40px;
+    padding-top: 68px;
+    border-top: 1px solid var(--gr10);
+}
+
+.section-elevations>.inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* sections */
+.section-sections {
+    margin-top: 40px;
+    padding-top: 68px;
+    border-top: 1px solid var(--gr10);
+}
+
+.pf-card-3 {
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pf-card-3:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.pf-card-3:nth-child(odd) .right {
+    padding-left: 80px;
+}
+
+.pf-card-3:nth-child(even) .right {
+    padding-right: 80px;
+}
+
+.pf-card-3 .pf-img {
+    width: 60%;
+    flex-shrink: 0;
+}
+
+.pf-card-3 .right {
+    padding: 30px 0;
+}
+
+.pf-card-3 .text-e {
+    margin: 0;
+}
+
+.pf-card-3 .text-d {
+    margin-top: 35px;
+}
+
+.pf-card-3 ul li {
+    margin-bottom: 10px;
+    display: list-item;
+    list-style: circle inside;
+}

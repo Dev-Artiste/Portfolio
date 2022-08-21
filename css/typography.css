@@ -36,11 +36,39 @@ P {
     color: var(--gr3);
 }
 
-.title-block-a {
+.text-c {
+    font-family: var(--fQ);
+    font-size: 43px;
+    line-height: 55px;
+}
+
+.text-d {
+    font-family: var(--fM500);
+    font-size: 11px;
+    color: var(--gr4);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.text-e {
+    font-family: var(--fQ);
+    font-size: 27px;
+}
+
+.title-block-a-center {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.title-block-a-left {
+    margin-bottom: 40px;
+}
+
+.title-block-a-left .text-a {
+   text-transform: uppercase;
+   font-size: 120px;
 }
 
 .title-block-a .text-a {
