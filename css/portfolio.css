@@ -47,7 +47,7 @@
     margin-top: 100px;
 }
 
-.pr-gallery>.inner {
+.pr-gallery .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -60,7 +60,7 @@
     border-top: 1px solid var(--gr10);
 }
 
-.section-plans>.inner {
+.section-plans .card-wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,7 +86,7 @@
     border-top: 1px solid var(--gr10);
 }
 
-.section-elevations>.inner {
+.section-elevations .card-wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
